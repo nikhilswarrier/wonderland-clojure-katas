@@ -1,6 +1,12 @@
  (ns wonderland-number.finder)
-
+ (defn exp [x n]
+  (reduce * (repeat n x)))
 (defn wonderland-number []
-(for (vals[(range 100000 166667)])
-  (println vals)
-))
+(def numb 0)
+(def numb (exp 10 6))
+(def numb (/ (- numb 1) 7))
+(def wondernum numb)
+(println wondernum)
+wondernum
+)
+
